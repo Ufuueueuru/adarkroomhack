@@ -73,6 +73,8 @@
 		function hack() {
 			$.each(State.stores, function(e, i) { State.stores[e] = 9999999; });
 		}
+		
+		setInterval(hack, 1000);
 	</script>
 	
 	<script type='text/javascript'>
@@ -114,6 +116,5 @@
 			</div>
 		</div>
 	</div>
-	<button onclick="hack()">Hack</button>
 </body>
 </html>
