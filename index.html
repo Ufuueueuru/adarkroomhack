@@ -69,6 +69,12 @@
 	<script src="script/events/encounters.js"></script>
 	<script src="script/events/setpieces.js"></script>
 	
+	<script>
+		function hack() {
+			$.each(State.stores, function(e, i) { State.stores[e] = 9999999; });
+		}
+	</script>
+	
 	<script type='text/javascript'>
 		var oldIE = false;
 	</script>
@@ -108,5 +114,6 @@
 			</div>
 		</div>
 	</div>
+	<button onclick="hack()">Hack</button>
 </body>
 </html>
